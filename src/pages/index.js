@@ -8,63 +8,62 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
+    text: "Diseño Web Creativo",
+    url: "https://www.ionos.es/digitalguide/paginas-web/diseno-web/inspiracion-para-una-pagina-web-con-diseno-creativo/",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "Nuestro equipo de diseñadores web crea experiencias visuales cautivadoras que reflejan la identidad de tu marca y atraen a tu audiencia objetivo. Desde el diseño de interfaces de usuario hasta la creación de prototipos interactivos, nos comprometemos a ofrecer soluciones de diseño web creativas y personalizadas.",
   },
   {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+    text: "Desarrollo Frontend y Backend",
+    url: "https://platzi.com/blog/que-es-frontend-y-backend/#:~:text=La%20principal%20diferencia%20entre%20frontend,escena%20de%20una%20aplicaci%C3%B3n%20web.",
     description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+      "Utilizamos las últimas tecnologías y mejores prácticas de desarrollo para construir sitios web funcionales y eficientes. Nuestros desarrolladores frontend se enfocan en la usabilidad y la experiencia del usuario, mientras que nuestros desarrolladores backend se encargan de la seguridad y el rendimiento del sitio. Juntos, creamos sitios web robustos y escalables que cumplen con tus necesidades y objetivos.",
   },
   {
-    text: "Plugin Library",
+    text: "Optimización de Motores de Búsqueda (SEO)",
     url: "https://www.gatsbyjs.com/plugins",
     description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+      "El SEO es crucial para aumentar la visibilidad en línea y atraer tráfico orgánico a tu sitio web. Nuestro equipo de expertos en SEO utiliza estrategias avanzadas para mejorar el ranking de tu sitio en los motores de búsqueda y aumentar la cantidad y calidad de visitantes. Desde la investigación de palabras clave hasta la optimización del contenido, estamos comprometidos a maximizar el potencial de tu sitio web en línea.",
   },
   {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
+    text: "Mantenimiento y Soporte Continuo",
+    url: "https://conasa.grupocibernos.com/blog/que-es-el-soporte-y-mantenimiento-de-aplicaciones",
     description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+      "El mantenimiento regular y el soporte continuo son esenciales para garantizar que tu sitio web funcione de manera óptima en todo momento. Ofrecemos servicios de mantenimiento proactivos y soporte técnico dedicado para garantizar que tu sitio web esté siempre actualizado, seguro y funcional. Nos ocupamos de los detalles técnicos para que puedas concentrarte en hacer crecer tu negocio.",
   },
 ]
 
 const samplePageLinks = [
   {
-    text: "Page 2",
+    text: "Nuestro Enfoque",
     url: "page-2",
     badge: false,
     description:
-      "A simple example of linking to another page within a Gatsby site",
+      "En Desarrollo S.L, nos comprometemos a ofrecer soluciones de desarrollo web profesionales y personalizadas que impulsen el éxito de tu negocio en línea. Trabajamos en estrecha colaboración con nuestros clientes para entender sus necesidades y objetivos específicos, y nos esforzamos por superar sus expectativas en cada proyecto. Desde pequeñas empresas hasta grandes corporaciones, estamos aquí para ayudarte a alcanzar tu máximo potencial en línea.",
   },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
+  { text: "Proyectos", url: "using-typescript" },
+  { text: "Conocimiento en desarrollo", url: "using-ssr" },
+  { text: "Contacto", url: "using-dsg" },
 ]
 
 const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
+  { text: "Whatsapp", url: "https://www.whatsapp.com/?lang=es_LA" },
   {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
+    text: "Instagram",
+    url: "https://www.instagram.com/",
   },
   {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
+    text: "Facebook",
+    url: "https://www.facebook.com/ADLOrtografia/posts/3d1174e4/10160170667269507/?locale=af_ZA",
   },
   {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
+    text: "Linkedin",
+    url: "https://www.linkedin.com/feed/?trk=sem-ga_campid.18146679037_asid.140850334975_crid.694860685343_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9061040",
   },
   {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
+    text: "GitHub",
+    url: "https://github.com/",
   },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
 ]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
@@ -82,18 +81,17 @@ const IndexPage = () => (
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>
-        Welcome to <b>Gatsby!</b>
+        Desarrollo Web Profesional
       </h1>
+      <h2>Nuestros Servicios</h2>
       <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
+        {" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
             {i !== samplePageLinks.length - 1 && <> · </>}
           </React.Fragment>
         ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
     <ul className={styles.list}>
